@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "pangea_overworld",
+	"version": "${version}",
+	"name": "Pangea Overworld",
+	"description": "Overhauls overworld world generation, adding new biomes, stuctures and wonders to explore.",
+	"authors": [
+		"AbsoluteNarwhal"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/pangea_overworld/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.absolutenarwhal.pangeaoverworld.PangeaOverworld"
+		],
+		"client": [
+			"net.absolutenarwhal.pangeaoverworld.PangeaOverworldClient"
+		],
+		"fabric-datagen": [
+			"net.absolutenarwhal.pangeaoverworld.PangeaOverworldDataGenerator"
+		]
+	},
+	"mixins": [
+		"pangea_overworld.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
